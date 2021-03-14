@@ -12,3 +12,4 @@ sqlparse==0.4.1
 termcolor==1.1.0
 tqdm==4.59.0
 Werkzeug==1.0.1
+gunicorn==19.9.0
