@@ -1,0 +1,100 @@
+/* Fill viewport, hide scroll bar */
+html, body
+{
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Ensure content is below navbar */
+div.container-fluid
+{
+    padding-top: 56px;
+}
+
+/* Fill viewport */
+div.container-fluid, div.row, div.col, div.jumbotron
+{
+    height: 100%;
+}
+
+/* centring text*/
+/* div.col
+{ margin-top: 100px;
+    text-align: center
+} */
+
+/* Add padding around form */
+form
+{
+    padding: 15px;
+}
+
+/* Wrap and scroll preformatted text */
+pre
+{
+    height: 100%;
+    overflow: auto;
+    padding: 15px;
+    white-space: pre-wrap;
+}
+
+/* Highlight spans */
+span
+{
+    background-color: #ff0;
+}
+
+/*For dynamic background*/
+body{
+     margin: 0;
+     padding: 0;
+     text-align:center
+   
+      
+  }body {
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+  input{
+      font-size : 10 px;
+  }
+  
+  canvas {
+    display: block;
+  }
+
+/* Customizing Upload style*/
+
+.custom-file-upload {
+    border: 1px solid #000000;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+input[type="file"] {
+    display:none;
+}
+
+/* Customizing submit button*/
+input[type=submit] {
+    padding: 5px 15px;
+    background: rgb(19, 21, 24);
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+  }
