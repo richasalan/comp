@@ -1,10 +1,9 @@
-import cs50
 import re
 from flask import Flask, abort, redirect, render_template, request
 from html import escape
 from werkzeug.exceptions import default_exceptions, HTTPException
 
-from helpers import lines, sentences, substrings
+from helpers import substrings
 
 # Configure application
 app = Flask(__name__)
@@ -44,10 +43,6 @@ def compare():
     # Compare files
     if not request.form.get("algorithm"):
         abort(400, "missing algorithm")
-    # elif request.form.get("algorithm") == "lines":
-    #     regexes = [f"^{re.escape(match)}$" for match in lines(file1, file2)]
-    # elif request.form.get("algorithm") == "sentences":
-    #     regexes = [re.escape(match) for match in sentences(file1, file2)]
     elif request.form.get("algorithm") == "substrings":
         if not request.form.get("length"):
             abort(400, "missing length")

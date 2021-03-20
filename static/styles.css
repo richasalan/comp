@@ -86,7 +86,7 @@ body{
     cursor: pointer;
 }
 input[type="file"] {
-    display:none;
+    display:inline-flex;
 }
 
 /* Customizing submit button*/
